@@ -93,7 +93,7 @@ el('rows').innerHTML=data.map(x=>'<tr><td><b>'+esc(x.company)+'</b><br><small>'+
 el('q').oninput=render;el('filter').onchange=render;
 el('export').onclick=()=>{let cols=['company','city','industry','score','priority','review_status','flags'];
 let rows=[cols.join(','),...visible().map(x=>cols.map(k=>'"'+String(Array.isArray(x[k])?x[k].join('; '):x[k]??'').replace(/"/g,'""')+'"').join(','))];
-let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([rows.join('\n')],{type:'text/csv'}));a.download='lead_review_queue.csv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};render();
+let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([rows.join('\\n')],{type:'text/csv'}));a.download='lead_review_queue.csv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};render();
 </script></body></html>"""
     return html.replace("__LEADS__", payload)
 
