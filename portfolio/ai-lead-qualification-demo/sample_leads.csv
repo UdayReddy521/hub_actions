@@ -1,0 +1,9 @@
+company,city,industry,service_area,propane_evidence,contact_verified,existing_customer,source_note
+Rio Grande Forklift Services,El Paso,forklift_service,yes,confirmed,yes,no,Synthetic customer interview note
+Mesa Cold Storage,El Paso,warehouse,yes,potential,yes,no,Synthetic industry category only
+Southwest Metals Plant,Anthony,manufacturing,yes,unknown,no,no,Synthetic directory listing
+Sunset Hospitality,El Paso,hotel,yes,potential,yes,no,Synthetic hotel listing
+Rio Grande Forklift Services,El Paso,forklift_service,yes,confirmed,yes,no,Duplicate synthetic business record
+Desert Kitchen Group,El Paso,restaurant,yes,confirmed,yes,yes,Synthetic existing customer CRM record
+Alamogordo Distribution,Alamogordo,warehouse,no,potential,yes,no,Synthetic location outside example area
+Borderline Packaging,El Paso,manufacturing,yes,confirmed,no,no,Synthetic verified usage note
